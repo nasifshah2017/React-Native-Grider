@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, StylesSheet, View } from "react-native";
 
-const QuizScreen = () => {
+const HomeScreenQuiz = () => {
 
     const name = "Nasif";
 
@@ -30,4 +30,4 @@ const styles = StylesSheet.create({
     }
 });
 
-export default QuizScreen;
+export default HomeScreenQuiz;
