@@ -1,8 +1,16 @@
 import React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet, View, Button } from 'react-native';
 
 const HomeScreen = () => {
-  return <Text style={styles.text}>HomeScreen</Text>;
+  return <View>
+          <Text style={styles.text}>HomeScreen</Text>
+          <Button
+            onPress={() => props.navigation.navigate("Components")}
+            title="Go to Components Demo"/>
+          <Button
+            title="Go to List Demo"
+            onPress={() => props.navigate.navigate("List")} />
+        </View>
 };
 
 const styles = StyleSheet.create({
@@ -12,3 +20,10 @@ const styles = StyleSheet.create({
 });
 
 export default HomeScreen;
+
+// Buttons with React Native
+
+// Button: Very simple component for showing a button and detecting a press.
+
+// Touchable Opacity: Highly customizable component that can detect a press 
+//                    on just any kind of element. 
