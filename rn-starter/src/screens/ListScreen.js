@@ -28,7 +28,6 @@ const ListScreen = () => {
    
     return (
         <FlatList
-
             horizontal                              // Making the list appear horizontal instead of vertical
             showsHorizontalScrollIndicator={false}  // Making the horizontal scroll bar invisible
             keyExtractor={friend => friend.name}    // Assigning a key to each object

@@ -28,7 +28,6 @@ const ListScreenQuiz = () => {
    
     return (
         <FlatList
-
             keyExtractor={friend => friend.name}    // Assigning a key to each object
             data={friends} 
             render={({ item }) => {
@@ -36,7 +35,11 @@ const ListScreenQuiz = () => {
                 // element === {item: { name: "Friend #1 "}, index: 0}
                 // item === {name: "Friend #1"}
 
-                return <Text style={styles.textStyle}>Name: {item.name} - Age: {item.age}</Text>;
+                return(  
+                        <Text style={styles.textStyle}>
+                            Name: {item.name} - Age: {item.age}
+                        </Text>
+                    );
             }}
         />
     );

@@ -2,21 +2,18 @@ import React from "react";
 import { View, Text, Stylesheet } from "react-native";
 import ImageDetail from "../components/ImageDetail";
 
-const ImageDetail = () => {
+const ImageScreen = () => {
     return (
         <View>
             <ImageDetail 
                 title="Forest" 
-                imageSource={require("../../assets/forest.jpg")}
-                score={9} />
+                imageSource={require("../../assets/forest.jpg")} />
             <ImageDetail 
                 title="Beach" 
-                imageSource={require("../../assets/beach.jpg")}
-                score={7} />
+                imageSource={require("../../assets/beach.jpg")} />
             <ImageDetail 
                 title="Mountain" 
-                imageSource={require("../../assets/mountain.jpg")}
-                score={10} />
+                imageSource={require("../../assets/mountain.jpg")} />
         </View>
     );
 };
