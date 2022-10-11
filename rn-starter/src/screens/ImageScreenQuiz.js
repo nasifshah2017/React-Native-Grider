@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import ImageDetailQuiz from "../components/ImageDetail";
+import ImageDetailQuiz from "../components/ImageDetailQuiz";
 
 const ImageScreenQuiz = () => {
     return (
